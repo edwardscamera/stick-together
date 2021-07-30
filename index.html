@@ -1,0 +1,72 @@
+<!--
+    TODO
+
+    - MORE SKINS!
+    - MORE HANDS!
+
+    - 
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Stick Together</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas></canvas>
+
+    <div id="howtoplaybtn" class="btnSlide">HOW TO PLAY</div>
+    <div id="shopBtn" class="btnSlide">SHOP</div>
+    <div id="die" class="boxSlide box">
+        <h1>You died at <span id="meter"></span> meters!</h1>
+        <h3>High score: <span id="highscore"></span>m</h3>
+    </div>
+    <div id="shopcontainer" class="boxSlide box">
+        <h1 style="margin:0px;">Hands</h1>
+        <div id="grapples" class="shoppanel"></div>
+        <h1 style="margin-bottom:0px;">Skins</h1>
+        <div id="skins" class="shoppanel"></div>
+        <div id="backbtn" onclick="exitmenus()" class="backbtn">Back</div>
+    </div>
+    <div id="howtoplaycontainer" class="boxSlide box" style="display: table-row; width: 700px;">
+        <div style="display: table-cell; padding-left: 15px; text-align: left; width: 40%;">
+            <h1>Controls</h1>
+            <p>A/D - Move left and right</p>
+            <p>W/SPACE - Jump</p>
+            <br />
+            <p>Hold mouse - Use hand mode</p>
+            <p>Hand Mode A/D - Swing left and right</p>
+            <p>Arrow Keys work as well.</p>
+            <br />
+
+            <p>In hand mode, you and the walls can STICK TOGETHER to swing and make your
+                way across
+                the
+                deep depths of the void.</p>
+            <br />
+        </div>
+        <div style="display: table-cell; padding-right: 15px; text-align: right; width: 40%;">
+            <h1>Cool Things</h1>
+            <p>
+                <img src="./images/coin.png"> This is a coin! Collect them to use in the shop.
+                <br />
+                <img src="./images/skull.png"><img src="./images/bomb.png"><img src="./images/facebook.png"> These are
+                obstacles. Try to avoid them. When you hit one, it will STICK to you, slowing you down temporarily.
+                <br /><br />
+                <a href="http://edwardscamera.com" target="_blank">edwardscamera.com</a>
+                <br /><br />
+                <img src="images/demo.png" style="border-radius: 15px; width: 75%;">
+            </p>
+        </div>
+        <div id="backbtn" onclick="exitmenus()" class="backbtn">Back</div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

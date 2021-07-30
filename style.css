@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "VCROSD";
+    src: url("./font.ttf");
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0px;
+    font-family: VCROSD;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ccc;
+    opacity: 100%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    text-align: center;
+    user-select: none;
+    transition: .3s ease-in-out;
+}
+.boxSlide {
+    top: 150%!important;
+    
+}
+
+#shopBtn {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #ccc;
+    opacity: 70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    width: 310px;
+    border-radius: 15px;
+    text-align: center;
+    user-select: none;
+}
+#shopBtn:hover {
+    background-color: #fff;
+    opacity: 100%;
+}
+#howtoplaybtn {
+    position: absolute;
+    bottom: 65px;
+    left: 5px;
+    background-color: #ccc;
+    opacity: 70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    width: 310px;
+    border-radius: 15px;
+    text-align: center;
+    user-select: none;
+}
+#howtoplaybtn:hover {
+    background-color: #fff;
+    opacity: 100%;
+}
+.hide {
+    left: -320px!important;
+}
+
+#shopcontainer {
+    opacity: 100%!important;
+    max-width: 840px;
+    padding: 15px!important;
+}
+
+.shoppanel {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #eee;
+    overflow-x: scroll;
+    min-height: 195px;
+    white-space: nowrap;
+}
+.shoppanel img {
+    width: 75px;
+    image-rendering: pixelated;
+    margin-bottom: 15px;
+}
+.buybtn {
+    background-color: yellow;
+    border: 3px solid #aa0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .1s ease-out;
+    margin-bottom: 15px;
+}
+.buybtn:hover {
+    background-color: #aa0;
+    border: 3px solid #880;
+}
+.backbtn {
+    background-color: yellow;
+    border: 3px solid #aa0;
+    padding: 15px;
+    width: 50px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .1s ease-out;
+    margin-bottom: 15px;
+}
+.backbtn:hover {
+    background-color: #aa0;
+    border: 3px solid #880;
+}
+
+table {
+    width: auto;
+}
+tr {
+    vertical-align:top;
+}
+td {
+    border-top: 1px dashed #ccc;
+    border-left: 1px dashed #ccc;
+    width: auto;
+    line-height: 3em;  
+}
