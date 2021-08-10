@@ -376,6 +376,22 @@ const player = {
                 tempy = (mouse.grappleY + Math.sin(mouse.ropeAngle + Math.PI) * mouse.ropeLength) / tilesize;
                 if (keyDown["d"] || keyDown["ArrowRight"]) mouse.ropeAngleVelocity -= 0.001;
                 if (keyDown["a"] || keyDown["ArrowLeft"]) mouse.ropeAngleVelocity += 0.001;
+                if (keyDown["w"] || keyDown["ArrowUp"]) {
+                    mouse.ropeLength -= 3;
+                    while (
+                        world[Math.min(Math.floor(tempy - 0.5), world.length - 1)][Math.floor(tempx + 0.5)] === 1 ||
+                        world[Math.min(Math.floor(tempy + 0.5), world.length - 1)][Math.floor(tempx + 0.5)] === 1 ||
+                        world[Math.min(Math.floor(tempy - 0.5), world.length - 1)][Math.floor(tempx - 0.5)] === 1 ||
+                        world[Math.min(Math.floor(tempy + 0.5), world.length - 1)][Math.floor(tempx - 0.5)] === 1
+                    ) {
+                        tempx = mouse.ropeX / tilesize - 0.5;
+                        tempy = mouse.ropeY / tilesize - 0.5;
+
+                        mouse.ropeLength += 0.1;
+                        updatePhys();
+                    }
+                }
+                if (keyDown["s"] || keyDown["ArrowDown"]) mouse.ropeLength += 3;
                 mouse.ropeLength = Math.max(30, Math.min(mouse.ropeLength, mouse.originalLength));
 
                 break;

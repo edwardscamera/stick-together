@@ -1,0 +1,9 @@
+v1.4 - 8/9/21
+    - Added changelog.txt
+    - Made all grapples retractable
+v1.3 - 8/4/21
+    - Delete uneccesary test.js file
+v1.1 - 7/30/21
+    - Cleanup Code
+v1.0 - 7/30/21
+    - Initial Release
