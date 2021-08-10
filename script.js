@@ -1,4 +1,4 @@
-console.log("VERSION 1.3");
+console.log("VERSION 1.4.1");
 
 // Setup CANVAS variables
 const CANVAS = document.querySelector("canvas");

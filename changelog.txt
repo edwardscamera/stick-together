@@ -1,3 +1,5 @@
+v1.4.1 - 8/9/21
+    - Fixed console log of version
 v1.4 - 8/9/21
     - Added changelog.txt
     - Made all grapples retractable
